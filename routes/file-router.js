@@ -99,7 +99,7 @@ router.post("/update", async (req, res) => {
 
     const updatedVideo = await videoModel.findOneAndUpdate(
       { videoUrl : url },
-      { $set: { Transcription: transcript } },
+      { $set: { Transcription: transcript , status : "ready" } },
       { new: true }
     );
 
