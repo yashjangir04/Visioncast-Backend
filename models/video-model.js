@@ -1,5 +1,4 @@
 const mongoose = require("mongoose");
-const { time } = require("motion");
 
 const videoModel = mongoose.Schema({
     videoUrl : {
